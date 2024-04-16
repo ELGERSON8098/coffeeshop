@@ -43,7 +43,7 @@ SAVE_FORM.addEventListener('submit', async (event) => {
     (ID_CATEGORIA.value) ? action = 'updateRow' : action = 'createRow';
     // Constante tipo objeto con los datos del formulario.
     const FORM = new FormData(SAVE_FORM);
-    // Petición para guardar los datos del formulario.
+    // Petición para guardar los datos del formularios.
     const DATA = await fetchData(CATEGORIA_API, action, FORM);
     // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
     if (DATA.status) {
